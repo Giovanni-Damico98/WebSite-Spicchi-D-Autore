@@ -8,3 +8,9 @@ setTimeout(() => {
   leftHrefDiv.classList.add("animate");
   rightHrefDiv.classList.add("animate");
 }, 100); // 100ms di ritardo per un effetto più fluido
+
+// MOBILE
+const mobileLogo = document.getElementById("mobile-logo");
+setTimeout(() => {
+  mobileLogo.classList.add("animate");
+}, 100); // 100ms di ritardo per un effetto più fluido

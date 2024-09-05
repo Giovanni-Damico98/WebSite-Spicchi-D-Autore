@@ -102,3 +102,20 @@ header a:active {
   width: 40%;
   align-self: center;
 }
+
+#mobile-header-links img {
+  width: 20%;
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: -100px; /* Inizia fuori schermo */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 1s ease-out; /* Transizione dolce */
+}
+
+#mobile-header-links img.animate {
+  top: 50%; /* Posiziona al centro verticalmente */
+  transform: translate(
+    -50%,
+    -200%
+  ); /* Centra orizzontalmente e verticalmente */
+}
