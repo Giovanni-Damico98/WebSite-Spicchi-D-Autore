@@ -1,0 +1,136 @@
+body {
+  background-color: black !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#back-button-div {
+  width: 5%;
+}
+
+#back-button-div {
+  width: 5%;
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: 50%;
+  left: -200px; /* Inizia fuori schermo */
+  transform: translateY(-50%); /* Mantenere centrato verticalmente */
+  transition: left 0.8s ease-out 0.1s; /* Transizione dolce, ritardata di 0.5s */
+}
+
+#back-button-div.animate {
+  left: calc(-10px); /* Posiziona accanto al logo-div */
+  transform: translateY(-50%);
+}
+
+a:hover {
+  scale: 1.03;
+}
+
+a:active {
+  scale: 1.05;
+}
+
+#facebook {
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: -500px; /* Inizia fuori schermo */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.8s ease-out 0.5s; /* Transizione dolce */
+}
+
+#facebook.animate {
+  top: 36%; /* Posiziona al centro verticalmente */
+  transform: translate(
+    -220%,
+    -40%
+  ); /* Centra orizzontalmente e verticalmente */
+}
+
+#instagram {
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: -500px; /* Inizia fuori schermo */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: top 0.8s ease-out 1.1s; /* Transizione dolce */
+}
+
+#instagram.animate {
+  top: 36%; /* Posiziona al centro verticalmente */
+  transform: translate(120%, -38%); /* Centra orizzontalmente e verticalmente */
+}
+
+#tiktok {
+  position: absolute; /* Posizionamento assoluto per animare */
+  bottom: -1000px; /* Inizia fuori schermo */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.8s ease-out 0.8s; /* Transizione dolce */
+}
+
+#tiktok.animate {
+  bottom: -30%; /* Posiziona al centro verticalmente */
+  transform: translate(-50%, -40%); /* Centra orizzontalmente e verticalmente */
+}
+
+#instagram video,
+#facebook video,
+#tiktok video {
+  border-radius: 5px;
+  width: 220px;
+  height: 450px auto; /* Mantiene il rapporto d'aspetto */
+}
+
+#title {
+  position: relative;
+  top: 3%;
+  left: 35%;
+  font-size: 30px;
+}
+
+.fa-brands {
+  font-size: 40px;
+}
+.fa-square-facebook {
+  color: #0866ff;
+}
+
+#instagram img {
+  height: 35px;
+  border-radius: 10px;
+}
+
+.fa-tiktok {
+  color: white;
+}
+
+#background-div {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+#background-bottom,
+#background-top {
+  position: relative;
+  height: 150px;
+  width: 400px;
+}
+
+#background-top {
+  top: -6%;
+  right: 39%;
+  transform: rotate(-33deg);
+}
+
+#background-bottom {
+  left: 76%;
+  top: 71%;
+  transform: rotate(-15deg);
+}

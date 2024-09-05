@@ -1,0 +1,63 @@
+body {
+  background-color: black !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-fluid {
+  height: 100vh;
+  width: 100vw;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#back-button-div {
+  width: 5%;
+}
+
+#back-button-div {
+  width: 5%;
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: 50%;
+  left: -200px; /* Inizia fuori schermo */
+  transform: translateY(-50%); /* Mantenere centrato verticalmente */
+  transition: left 0.8s ease-out 0.1s; /* Transizione dolce, ritardata di 0.5s */
+}
+
+#back-button-div.animate {
+  left: calc(-10px); /* Posiziona accanto al logo-div */
+  transform: translateY(-50%);
+}
+
+a:hover {
+  scale: 1.03;
+}
+
+a:active {
+  scale: 1.05;
+}
+
+#background-div {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+#background-bottom,
+#background-top {
+  position: relative;
+  height: 150px;
+  width: 400px;
+}
+
+#background-top {
+  top: -6%;
+  right: 39%;
+  transform: rotate(-33deg);
+}
+
+#background-bottom {
+  left: 76%;
+  top: 71%;
+  transform: rotate(-15deg);
+}
