@@ -103,18 +103,33 @@ header a:active {
 }
 
 #mobile-header-links img {
-  width: 30%;
+  width: 40%;
   position: absolute; /* Posizionamento assoluto per animare */
   top: -100px; /* Inizia fuori schermo */
   left: 50%;
   transform: translateX(-50%);
-  transition: top 1s ease-out; /* Transizione dolce */
+  transition: top 1s ease-out 0.5s; /* Transizione dolce */
 }
 
 #mobile-header-links img.animate {
   top: 50%; /* Posiziona al centro verticalmente */
   transform: translate(
     -50%,
-    -170%
+    -130%
   ); /* Centra orizzontalmente e verticalmente */
+}
+
+#mobile-right-href {
+  width: 20%;
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: 50%;
+  right: -500px; /* Inizia fuori schermo a destra */
+  transform: translateY(-50%); /* Mantiene centrato verticalmente */
+  transition: right 1s ease-out 0.5s; /* Transizione dolce, ritardata di 0.5s */
+  text-align: center;
+}
+
+#mobile-right-href.animate {
+  right: 40%; /* Posiziona accanto al logo-div a sinistra */
+  transform: translateY(50%);
 }

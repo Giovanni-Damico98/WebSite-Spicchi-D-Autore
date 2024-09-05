@@ -10,7 +10,9 @@ setTimeout(() => {
 }, 100); // 100ms di ritardo per un effetto più fluido
 
 // MOBILE
+const mobileRightHref = document.getElementById("mobile-right-href");
 const mobileLogo = document.getElementById("mobile-logo");
 setTimeout(() => {
   mobileLogo.classList.add("animate");
+  mobileRightHref.classList.add("animate");
 }, 100); // 100ms di ritardo per un effetto più fluido
