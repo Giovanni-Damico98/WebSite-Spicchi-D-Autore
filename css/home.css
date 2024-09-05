@@ -133,3 +133,17 @@ header a:active {
   right: 40%; /* Posiziona accanto al logo-div a sinistra */
   transform: translateY(50%);
 }
+
+#mobile-left-href {
+  width: 20%;
+  position: absolute; /* Posizionamento assoluto per animare */
+  top: 50%;
+  left: -500px; /* Inizia fuori schermo */
+  transform: translateY(-50%); /* Mantenere centrato verticalmente */
+  transition: left 1s ease-out 0.5s; /* Transizione dolce, ritardata di 0.5s */
+}
+
+#mobile-left-href.animate {
+  left: 40%; /* Posiziona accanto al logo-div */
+  transform: translateY(-50%);
+}
