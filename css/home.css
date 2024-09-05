@@ -122,11 +122,13 @@ header a:active {
 #mobile-right-href {
   width: 100%;
   position: absolute; /* Posizionamento assoluto per animare */
-  top: 50%;
+  top: 52%;
   right: -500px; /* Inizia fuori schermo a destra */
   transform: translateY(-50%); /* Mantiene centrato verticalmente */
   transition: right 1s ease-out 0.5s; /* Transizione dolce, ritardata di 0.5s */
   text-align: center;
+  height: 10%;
+  justify-content: space-between;
 }
 
 #mobile-right-href.animate {
@@ -142,6 +144,8 @@ header a:active {
   transform: translateY(-50%); /* Mantenere centrato verticalmente */
   transition: left 1s ease-out 0.5s; /* Transizione dolce, ritardata di 0.5s */
   text-align: center;
+  height: 10%;
+  justify-content: space-between;
 }
 
 #mobile-left-href.animate {
