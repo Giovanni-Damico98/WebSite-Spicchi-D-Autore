@@ -14,9 +14,6 @@ body {
 }
 /* HEADER */
 header {
-  min-height: 100px;
-  min-width: 500px;
-  width: 90%;
   background-color: black;
 }
 
@@ -29,7 +26,7 @@ header img {
 }
 
 #logo-div {
-  width: 23%;
+  width: 20%;
   position: absolute; /* Posizionamento assoluto per animare */
   top: -500px; /* Inizia fuori schermo */
   left: 50%;
@@ -44,7 +41,7 @@ header img {
 
 /* LEFT HREF */
 #left-href {
-  width: 23%;
+  width: 20%;
   position: absolute; /* Posizionamento assoluto per animare */
   top: 50%;
   left: -500px; /* Inizia fuori schermo */
@@ -59,7 +56,7 @@ header img {
 
 /* RIGHT HREF */
 #right-href {
-  width: 23%;
+  width: 20%;
   position: absolute; /* Posizionamento assoluto per animare */
   top: 50%;
   right: -500px; /* Inizia fuori schermo a destra */
@@ -73,7 +70,6 @@ header img {
 }
 
 header a {
-  width: 15%;
   text-decoration: none;
   color: white;
 }
@@ -89,104 +85,15 @@ header a:active {
 #chisiamo-href {
   width: 85px;
 }
-/* Carousel */
-#carousel {
-  height: 400px;
-  width: 700px;
-  margin: 30px auto;
-  position: relative;
-}
 
-#carousel .gallery {
-  height: 100%;
-  position: relative;
-}
-
-/* Galleria */
-.gallery {
-  position: relative;
-  height: 100%;
-}
-
-#imgText {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: end;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-#imgText h2,
-#imgText p {
-  text-shadow: 2px 8px 4px rgba(0, 0, 0, 0.8);
-}
-
-#carousel img {
+/* MOBILE */
+#mobile-header-div {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
 }
 
-#carousel img.active {
-  display: block;
+#mobile-header-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
-
-/* Carousel Buttons */
-#carousel .bi {
-  font-size: 2rem;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-}
-
-.bi:hover {
-  scale: 1.1;
-}
-
-.bi:active {
-  scale: 1.2;
-}
-
-#prev {
-  left: -10%;
-}
-
-#next {
-  right: -10%;
-}
-
-/* Thumbnails */
-
-#thumbnails {
-  width: 700px;
-  margin: 0 auto;
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#thumbnails img {
-  height: 100%;
-  width: 19%;
-  border-radius: 10px;
-  filter: grayscale(1);
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-#thumbnails img:hover {
-  transform: translateY(-10px);
-  filter: grayscale(0.5);
-  box-shadow: 0 0 10px goldenrod;
-}
-
-#thumbnails img.active {
-  filter: grayscale(0);
-  box-shadow: 0 0 10px green;
-}
-
-

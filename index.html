@@ -25,28 +25,44 @@
   </head>
 
   <body>
+    <!-- HEADER MOBILE -->
+    <div
+      id="mobile-header-div"
+      class="d-md-none d-sm-block d-flex justify-content-center align-items-center"
+    >
+      <div
+        id="mobile-header-links"
+        class="d-flex flex-column text-center fw-bold gap-3"
+      >
+        <a href="html/menu.html">MENU</a>
+        <a href="html/contatti.html">CONTATTI</a>
+        <a href="html/chisiamo.html">CHI SIAMO</a>
+        <a href="html/social.html">SOCIAL</a>
+      </div>
+    </div>
+    <!-- HEADER FINO A TABLET -->
     <div
       id="header-div"
-      class="container d-flex align-items-center justify-content-center"
+      class="container-fluid d-flex align-items-center justify-content-center d-none d-md-block w-100"
     >
-      <header class="d-flex justify-content-center align-items-center">
+      <header class="d-flex justify-content-center align-items-center w-100">
         <div
           class="links-div d-flex justify-content-between align-items-center gap-5 w-100 fw-bold"
         >
           <!-- LEFT HREF -->
-          <div id="left-href" class="d-flex justify-content-between w-25">
+          <div id="left-href" class="d-flex justify-content-between">
             <a href="html/menu.html">MENU</a>
             <a href="html/contatti.html">CONTATTI</a>
           </div>
           <!-- LOGO DIV -->
           <div
             id="logo-div"
-            class="w-25 d-flex align-items-center justify-content-center"
+            class="d-flex align-items-center justify-content-center"
           >
             <img src="img/logo.jpg" alt="Logo" />
           </div>
           <!-- RIGHT HREF -->
-          <div id="right-href" class="d-flex justify-content-between w-25">
+          <div id="right-href" class="d-flex justify-content-between">
             <a href="html/chisiamo.html" id="chisiamo-href">CHI SIAMO</a>
             <a href="html/social.html">SOCIAL</a>
           </div>
