@@ -97,3 +97,8 @@ header a:active {
   color: white;
   font-weight: bold;
 }
+
+#mobile-header-links img {
+  width: 40%;
+  align-self: center;
+}
